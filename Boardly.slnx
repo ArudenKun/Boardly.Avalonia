@@ -1,0 +1,10 @@
+<Solution>
+  <Folder Name="/solution/">
+    <File Path="Directory.Build.props" />
+    <File Path="Directory.Packages.props" />
+  </Folder>
+  <Folder Name="/src/">
+    <Project Path="src/Boardly.Core/Boardly.Core.csproj" />
+    <Project Path="src/Boardly/Boardly.csproj" />
+  </Folder>
+</Solution>

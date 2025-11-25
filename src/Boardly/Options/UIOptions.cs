@@ -1,0 +1,44 @@
+﻿using Avalonia.Controls;
+using CommunityToolkit.Mvvm.ComponentModel;
+using Humanizer;
+using SukiUI.Enums;
+
+namespace Boardly.Options;
+
+// ReSharper disable once InconsistentNaming
+public sealed partial class UIOptions : ObservableObject
+{
+    // [ObservableProperty]
+    // public partial Theme Theme { get; set; } = Theme.Default;
+
+    // [JsonIgnore]
+    // public ThemeVariant ThemeVariant =>
+    //     Theme switch
+    //     {
+    //         Theme.Light => ThemeVariant.Light,
+    //         Theme.Dark => ThemeVariant.Dark,
+    //         _ => ThemeVariant.Default,
+    //     };
+
+    [ObservableProperty]
+    public partial string ThemeColor { get; set; } = string.Empty;
+
+    [ObservableProperty]
+    public partial bool BackgroundAnimations { get; set; } = true;
+
+    [ObservableProperty]
+    public partial bool BackgroundTransitions { get; set; } = true;
+
+    [ObservableProperty]
+    public partial SukiBackgroundStyle BackgroundStyle { get; set; } =
+        SukiBackgroundStyle.GradientSoft;
+
+    [ObservableProperty]
+    public partial bool IsSideMenuExpanded { get; set; } = true;
+
+    [ObservableProperty]
+    public partial WindowState LastWindowState { get; set; } = WindowState.Normal;
+
+    [ObservableProperty]
+    public partial TimeSpan ToastDuration { get; set; } = 5.Seconds();
+}
