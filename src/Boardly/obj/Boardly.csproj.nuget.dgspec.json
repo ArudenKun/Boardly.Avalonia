@@ -243,6 +243,7 @@
             "CSharpier.MsBuild": "1.2.1",
             "Humanizer.Core": "3.0.1",
             "Lucide.Avalonia": "0.1.50",
+            "R3": "1.3.0",
             "Serilog.Extensions.Logging": "10.0.0",
             "Serilog.Sinks.Async": "2.1.0",
             "Serilog.Sinks.Console": "6.1.1",
